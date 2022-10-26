@@ -4,14 +4,14 @@ namespace App\Model;
 
 use App\DAO\ClientDAO;
 
-class Client 
+class Client
 {
-    private $name,$email,$phone,$phone2;
-    /** All clients from database. */
+    private $name, $email, $phone, $phone2;
+
     public $rows;
     /**
      * Get the value of name
-     */ 
+     */
     public function getName()
     {
         return $this->name;
@@ -21,7 +21,7 @@ class Client
      * Set the value of name
      *
      * @return  self
-     */ 
+     */
     public function setName($name)
     {
         $this->name = $name;
@@ -31,7 +31,7 @@ class Client
 
     /**
      * Get the value of email
-     */ 
+     */
     public function getEmail()
     {
         return $this->email;
@@ -41,7 +41,7 @@ class Client
      * Set the value of email
      *
      * @return  self
-     */ 
+     */
     public function setEmail($email)
     {
         $this->email = $email;
@@ -51,7 +51,7 @@ class Client
 
     /**
      * Get the value of phone
-     */ 
+     */
     public function getPhone()
     {
         return $this->phone;
@@ -61,7 +61,7 @@ class Client
      * Set the value of phone
      *
      * @return  self
-     */ 
+     */
     public function setPhone($phone)
     {
         $this->phone = $phone;
@@ -71,7 +71,7 @@ class Client
 
     /**
      * Get the value of phone2
-     */ 
+     */
     public function getPhone2()
     {
         return $this->phone2;
@@ -81,7 +81,7 @@ class Client
      * Set the value of phone2
      *
      * @return  self
-     */ 
+     */
     public function setPhone2($phone2)
     {
         $this->phone2 = $phone2;
@@ -98,29 +98,12 @@ class Client
     public function getAllRows()
     {
         $dao = new ClientDAO();
-        $this->rows = $dao->selectAll();
+        return  $this->rows = $dao->selectAll();
     }
     public function update()
     {
-
     }
     public function edit()
     {
-
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

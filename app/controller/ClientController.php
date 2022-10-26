@@ -13,9 +13,9 @@ class ClientController
 
     public static function listView()
     {
-        $model = new Client();
-        $model->getAllRows();
-       
+        $clients = new Client();
+        $clients->getAllRows();
+       var_dump(   $clients->getAllRows());
         include './app/view/client/list.php';
     }
     public static function updateView()
