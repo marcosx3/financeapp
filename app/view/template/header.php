@@ -31,11 +31,11 @@
                                 Clientes
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="/clientes/cadastro">Cadastrar Clientes</a></li>
+                                <li><a class="dropdown-item" href="/cliente/cadastro">Cadastrar Clientes</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="/clientes/lista">Listar Clientes</a></li>
+                                <li><a class="dropdown-item" href="/cliente/lista">Listar Clientes</a></li>
 
                             </ul>
                         </li>

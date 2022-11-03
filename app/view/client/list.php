@@ -6,18 +6,19 @@
                     <th>Email </th>
                     <th>Telefone </th>
                     <th>Telefone - 2 </th>
-                    <th>Finanças</th>
+                    <!-- <th>Finanças</th>
                     <th>Atualizar</th>
-                    <th>Excluir</th>
+                    <th>Excluir</th> -->
                 </tr>
             </thead>
             <tbody>
-                <?php foreach($model->rows as $item): ?>
+                <?php foreach($clients->rows as $item): ?>
+                  
                     <tr>
-                        <td> <?php  $item->name  ?> </td>
-                        <td> <?php  $item->email     ?> </td>
-                        <td> <?php  $item->phone     ?> </td>
-                        <td> <?php   $item->phone2    ?> </td>
+                        <td> <?=   $item->name  ?> </td>
+                        <td> <?=  $item->email     ?> </td>
+                        <td> <?=  $item->phone     ?> </td>
+                        <td> <?=   $item->phone2    ?> </td>
                         
                         <!-- <td>
                             <a href="" class="btn btn-info ">Finanças</a>
